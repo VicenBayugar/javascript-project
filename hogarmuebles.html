@@ -1,0 +1,118 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="css/styles.css">
+  <link rel="stylesheet" href="css/bootstrap.min.css">
+
+  <title>Hogar y Muebles</title>
+</head>
+
+<body>
+  <nav class="navbar navbar-expand-lg bg-dark navbar-dark pt-3 pb-3">
+    <div class="container d-flex justify-content-lg-around ">
+      <a href="index.html" class="navbar-brand">
+        <h1>TodoRubro</h1>
+      </a>
+
+      <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navmenu">
+        <span class="navbar-toggler-icon"></span>
+      </button>
+
+      <div class="collapse navbar-collapse" id="navmenu">
+        <ul class="navbar-nav me-auto ms-auto botones">
+          <li class="nav-item">
+            <a href="index.html" class="nav-link">Inicio</a>
+          </li>
+          <li class="nav-item dropdown">
+            <a href="" class="nav-link dropdown-toggle" data-bs-toggle="dropdown" href="#" role="button"
+              aria-expanded="false">Categorías</a>
+            <ul class="dropdown-menu dropdown-menu-dark">
+              <li><a class="dropdown-item" href="tecnologia.html">Tecnología</a></li>
+              <li><a class="dropdown-item" href="indumentaria.html">Indumentaria</a></li>
+              <li><a class="dropdown-item" href="hogarmuebles.html">Hogar y muebles</a></li>
+              <li><a class="dropdown-item" href="electrodomesticos.html">Electrodomésticos</a></li>
+            </ul>
+          </li>
+          <li class="nav-item">
+            <a href="#resumenCarrito" data-bs-toggle="offcanvas" class="nav-link" id="carrito">Carrito</a>
+          </li>
+        </ul>
+        <form class="d-flex">
+          <input class="form-control me-2" type="search" placeholder="Buscar" aria-label="Search">
+          <button class="btn btn-outline-light" type="submit">Buscar</button>
+        </form>
+      </div>
+    </div>
+  </nav>
+
+  <div class="carousel carousel-dark slide d-none d-sm-none d-md-block" data-bs-ride="carousel">
+    <div class="carousel-inner">
+      <div class="carousel-item active" data-bs-interval="4000">
+        <img src="img/D_NQ_684053-MLA47385010017_092021-OO.webp" class="d-block w-100" alt="oferta1">
+      </div>
+      <div class="carousel-item" data-bs-interval="4000">
+        <img src="img/D_NQ_762533-MLA47357880602_092021-OO.webp" class="d-block w-100" alt="oferta2">
+      </div>
+      <div class="carousel-item" data-bs-interval="4000">
+        <img src="img/D_NQ_820402-MLA47308388404_082021-OO.webp" class="d-block w-100" alt="oferta3">
+      </div>
+    </div>
+  </div>
+
+  <div class="container-fluid main pt-4 pb-5">
+    <div class="container">
+      <h2 class="ps-2 pb-2">Hogar y Muebles</h2>
+    </div>
+    <div class="container">
+      <div class="row row-cols-1 row-cols-md-2 row-cols-lg-4 g-4" id="hogar">
+      </div>
+    </div>
+  </div>
+
+  <div class="offcanvas offcanvas-end bg-light" tabindex="-1" id="resumenCarrito" aria-labelledby="offcanvasRightLabel">
+    <div class="offcanvas-header">
+      <h5 id="offcanvasRightLabel">Carrito</h5>
+      <button type="button" class="btn-close text-reset" data-bs-dismiss="offcanvas" aria-label="Close"></button>
+    </div>
+    <div class="offcanvas-body">
+      <div class="card border-primary mb-3">
+        <div class="card-header bg-transparent border-primary">Productos</div>
+        <div class="card-body" id="resumenProductos">
+        </div>
+        <div class="card-footer card-header bg-transparent border-primary">Resumen</div>
+        <div class="card-body row row-cols-2">
+          <h6 class="col-8">Total de compra:</h6>
+          <h6 class="col-4 text-end" id="totalCompra"></h6>
+          <h6 class="col-8">IVA:</h6>
+          <h6 class="col-4 text-end" id="IVA"></h6>
+          <h6 class="col-8">Precio en 1 pago:</h6>
+          <h6 class="col-4 text-end" id="precioEnEfectivo"></h6>
+          <h6 class="col-8">12 cuotas sin interés de:</h6>
+          <h6 class="col-4 text-end" id="cuotas"></h6>
+        </div>      
+      </div>
+      <div class="d-flex justify-content-center mb-3">
+        <a href="checkout.html" class="text-decoration-none"><button type="button" class="btn btn-primary w-100">Continuar compra</button></a>
+      </div>
+    </div>
+  </div>
+
+  <footer id="footer">
+    <div class="text-center pt-3 pb-2 bg-dark text-white-50">
+      <a href="#" class="pe-4"><img src="img/instagram.png" alt="instagram" class="logosContacto img-fluid" width="30"></a><a href="#" class="pe-4"><img src="img/gmail.png" alt="gmail" class="logosContacto img-fluid" width="30"></a><a href="#"><img src="img/whatsapp.png" alt="whatsapp" class="logosContacto img-fluid" width="30"></a>
+      <p class="pt-3">Dirección: Rivadavia 1234, Mar del plata</p>
+      <p>© 2021 Copyright: <a class="text-white-50" href="index.html">todorubro.com</a></p>
+    </div>
+  </footer >
+
+  <script src="js/bootstrap.bundle.min.js"></script>
+  <script src="jquery/jquery.min.js"></script>
+  <script src="js/main.js"></script>
+  <script src="js/hogarmuebles.js"></script>
+</body>
+
+</html>

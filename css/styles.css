@@ -1,0 +1,23 @@
+.main{
+    background-color: rgb(211, 211, 211);
+}
+
+.bodyAdm{
+    height: 100%;
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    background-color: rgb(211, 211, 211);
+}
+
+.login, .formAgregarP{
+    width: 50%;
+    height: 50%;
+}
+
+@media (max-width: 576px) { 
+    .login, .formAgregarP{
+        width: 90%;
+    }
+}
