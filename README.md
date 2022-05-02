@@ -21,6 +21,6 @@ It is an e-commerce made with JavaScript, HTML, CSS and Bootstrap.
 
 ## Deploy
 
-Open: [https://vicenbayugar.github.io/javascript-project/](https://vicenbayugar.github.io/javascript-project/)
+Open: [TodoRubro](https://vicenbayugar.github.io/javascript-project/)
 
 _Last update: 05/02/2022._
